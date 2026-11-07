@@ -82,7 +82,7 @@ Every `git push` to `main` redeploys the app automatically.
 
 | Setting | Where | Default |
 |---|---|---|
-| Gemini model | Sidebar field (or `DEFAULT_MODEL` in `app.py`) | `gemini-2.5-flash` |
+| Gemini model | Sidebar field (or `DEFAULT_MODEL` in `app.py`) | `gemini-flash-latest` |
 | API key | Secrets, env var `GEMINI_API_KEY`, or sidebar | none |
 
 If Google retires or renames the model, change the model name in the sidebar or `DEFAULT_MODEL`.
