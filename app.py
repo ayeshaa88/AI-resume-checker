@@ -20,7 +20,7 @@ from pypdf import PdfReader
 # --------------------------------------------------------------------------- #
 # Configuration
 # --------------------------------------------------------------------------- #
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-flash-latest"  # alias that always points to the newest stable Flash
 MAX_CHARS = 15000  # resume text sent to the model (keeps requests fast/cheap)
 MIN_CHARS = 200  # below this we assume the file is scanned/empty
 
@@ -203,7 +203,6 @@ def analyze_with_gemini(resume_text, job_description, api_key, model) -> dict:
         model=model,
         contents=build_prompt(resume_text, job_description),
         config=types.GenerateContentConfig(
-            temperature=0.2,
             response_mime_type="application/json",
         ),
     )
