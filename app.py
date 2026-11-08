@@ -20,7 +20,7 @@ from pypdf import PdfReader
 # --------------------------------------------------------------------------- #
 # Configuration
 # --------------------------------------------------------------------------- #
-DEFAULT_MODEL = "gemini-flash-latest"  # alias that always points to the newest stable Flash
+DEFAULT_MODEL = "gemini-3.5-flash-lite"  # alias that always points to the newest stable Flash
 MAX_CHARS = 15000  # resume text sent to the model (keeps requests fast/cheap)
 MIN_CHARS = 200  # below this we assume the file is scanned/empty
 
